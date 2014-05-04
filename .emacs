@@ -34,3 +34,7 @@
 
 (defun taoufik-set-scroll-step()
   (setq scroll-step 1))
+
+(defun taoufik-ido-mode()
+  "make buffer switch command show suggestions"
+  (ido-mode 1))
