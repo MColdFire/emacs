@@ -21,6 +21,16 @@
 	  ("marmalade" . "http://marmalade-repo.org/packages/")
 	  ("melpa" . "http://melpa.milkbox.net/packages/"))))
 
-(defun enable-drag-stuff-mode()
+(defun taoufik-enable-drag-stuff-mode()
   "Install drag-stuff package (from melpa)"
   (drag-stuff-global-mode))
+
+(defun taoufik-show-matching-paren()
+  (show-paren-mode 1))
+
+(defun taoufik-disable-tool-bar()
+  (interactive)
+  (tool-bar-mode -1))
+
+(defun taoufik-set-scroll-step()
+  (setq scroll-step 1))
