@@ -1,6 +1,8 @@
 ;; HELP
 ;; C-h v: Help on variable
 ;; C-h f: Help on function
+;; C-h k: Help on key-binding
+;; C-%: Find Replace
 ;; PRINT VARIABLE VALUE:
 ;; (print default-directory)
 
@@ -22,7 +24,7 @@
 (defun taoufik-prevent-backup-files()
   (setq make-backup-files nil))
 
-(defun taoufik-set-column-line-numbers ()
+(defun taoufik-set-column-line-numbers()
   (interactive)
   (global-linum-mode 1)
   (column-number-mode t) 
@@ -51,5 +53,10 @@
 (defun taoufik-ido-mode()
   "make buffer switch command show suggestions"
   (ido-mode 1))
+
 (defun taoufik-add-to-load-path()
   (add-to-list 'load-path "~/.emacs.d/elisp/"))
+
+(defun taoufik-set-key-bindings()
+  ;;(global-unset-key (kbd "C-b"));; To unset key binding
+  (global-set-key (kbd "C-l") 'goto-line))
