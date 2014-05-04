@@ -3,7 +3,20 @@
 ;; C-h v: Help on variable
 ;; C-h f: Help on function
 ;; C-h k: Help on key-binding
-;; C-%: Find Replace
+;; M-;: Indent comment
+;; M-{: Beginning of current paragraph
+;; M-}: End of current paragraph
+;; C-%: Find replace
+;; C-k: kill line
+;; M-u: uppercase word 
+;; M-l: lowercase word
+;; M-c: capitalize word
+;; C-x C-u: uppercase region
+;; C-x C-l: lowercase region
+;; SHELL
+;; M-x shell: start shell
+;; C-c C-c: stop running job
+;; C-c C-z: Suspend job
 ;; PRINT VARIABLE VALUE:
 ;; (print default-directory)
 
@@ -61,3 +74,4 @@
 (defun taoufik-set-key-bindings()
   ;;(global-unset-key (kbd "C-b"));; To unset key binding
   (global-set-key (kbd "C-l") 'goto-line))
+
