@@ -19,12 +19,28 @@
 ;; C-c C-z: Suspend job
 ;; PRINT VARIABLE VALUE:
 ;; (print default-directory)
+;; M-x ielm: start lisp interpreter
+;; M-x load-file: load source file
+
+(length "taoufik")
+(concat "taou" "fik")
+(capitalize "taoufik")
+(getenv "HOST")
+
+;;(mine yours his)
+;; ---------------     ----------------      -------------------
+;;| car  | cdr    |   | car    | cdr   |    | car       | cdr   |
+;;| mine | o--------> | yours  | o--------> | his       | nil   |
+;;|      |        |   |        |       |    |           |       |
+;; ---------------     ----------------      -------------------
 
 ;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ;; VARIABLES
 ;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (print default-directory)
 (print load-path)
+(print emacs-version)
+(print emacs-build-time)
 
 ;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ;; FUNCTIONS
