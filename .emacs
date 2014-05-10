@@ -102,13 +102,3 @@
 (defun taoufik-set-key-bindings()
   ;;(global-unset-key (kbd "C-b"));; To unset key binding
   (global-set-key (kbd "C-l") 'goto-line))
-
-
-(defun taoufik-ascii-art(string)
-  (let ((i 0) (L (length string)))
-    (print L)
-    (while (not (= i L))
-      (print (substring string i (+ i 1)))
-      
-      (setq i (+ i 1)))))
-
