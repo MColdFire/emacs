@@ -1,3 +1,16 @@
+;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+;; SOURCES
+;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+;; http://emacsworld.blogspot.fr
+;; http://emacsblog.org
+;; http://www.emacswiki.org
+;; http://ergoemacs.org
+;; http://sachachua.com
+;; http://www.masteringemacs.org
+;; http://emacsrocks.com/
+;; http://emacsredux.com/ 
+;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 ;; ايماكس || ايماكس
 ;; HELP
 ;; C-h v: Help on variable
@@ -26,7 +39,6 @@
 (concat "taou" "fik")
 (capitalize "taoufik")
 (getenv "HOST")
-
 ;;(mine yours his)
 ;; ---------------     ----------------      -------------------
 ;;| car  | cdr    |   | car    | cdr   |    | car       | cdr   |
@@ -90,4 +102,13 @@
 (defun taoufik-set-key-bindings()
   ;;(global-unset-key (kbd "C-b"));; To unset key binding
   (global-set-key (kbd "C-l") 'goto-line))
+
+
+(defun taoufik-ascii-art(string)
+  (let ((i 0) (L (length string)))
+    (print L)
+    (while (not (= i L))
+      (print (substring string i (+ i 1)))
+      
+      (setq i (+ i 1)))))
 
