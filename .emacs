@@ -78,7 +78,7 @@
 (setq scroll-step 1)
 
 ;;make buffer switch command show suggestions"
-(ido-mode 1))
+(ido-mode 1)
 
 ;;(global-unset-key (kbd "C-b"));; To unset key binding
-(global-set-key (kbd "C-l") 'goto-line))
+(global-set-key (kbd "C-l") 'goto-line)
