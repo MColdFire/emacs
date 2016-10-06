@@ -35,10 +35,6 @@
 ;; M-x ielm: start lisp interpreter
 ;; M-x load-file: load source file
 
-(length "taoufik")
-(concat "taou" "fik")
-(capitalize "taoufik")
-(getenv "HOST")
 ;;(mine yours his)
 ;; ---------------     ----------------      -------------------
 ;;| car  | cdr    |   | car    | cdr   |    | car       | cdr   |
