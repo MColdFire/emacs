@@ -3,6 +3,10 @@
 	  ("marmalade" . "http://marmalade-repo.org/packages/")
 	  ("melpa" . "http://melpa.milkbox.net/packages/")))
 
+;; Disbale welcome page
+(setq inhibit-startup-screen t)
+
+
 (setq make-backup-files nil)
 (global-linum-mode 1)
 (column-number-mode t) 
@@ -21,6 +25,9 @@
 
 ;; Set a theme
 (load-theme 'wombat t)
+
+;; Start a shell
+(shell)
 
 ;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ;; SOURCES

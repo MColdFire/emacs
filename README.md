@@ -1,4 +1,4 @@
-emacs
+Emacs
 =====
 
 My emacs configuration
